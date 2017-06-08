@@ -1,3 +1,6 @@
+# wget https://raw.githubusercontent.com/kamoor/elastic-search-config/master/install.sh
+# chmod 755 ./install.sh
+# ./install.sh
 sudo apt-get update
 sudo apt install awscli
 sudo apt-get install openjdk-8-jre-headless
@@ -8,8 +11,8 @@ sudo mkdir /es/data
 sudo mkdir /es/logs
 sudo chown -R elasticsearch:elasticsearch /es/
 
-wget https://raw.githubusercontent.com/kamoor/elastic-search-config/master/elasticsearch.yml
-wget https://raw.githubusercontent.com/kamoor/elastic-search-config/master/jvm.options
+wget -O elasticsearch.yml https://raw.githubusercontent.com/kamoor/elastic-search-config/master/elasticsearch.yml
+wget -O jvm.options https://raw.githubusercontent.com/kamoor/elastic-search-config/master/jvm.options
 sudo cp ./elasticsearch.yml /etc/elasticsearch/elasticsearch.yml
 sudo cp ./jvm.options /etc/elasticsearch/jvm.options
 
