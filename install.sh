@@ -5,7 +5,7 @@ wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-5.4.0.de
 sudo dpkg -i elasticsearch-5.4.0.deb
 sudo mkdir /es
 sudo mkdir /es/data
-sudo mkdir es/logs
+sudo mkdir /es/logs
 sudo chown -R elasticsearch:elasticsearch /es/
 
 wget https://raw.githubusercontent.com/kamoor/elastic-search-config/master/elasticsearch.yml
