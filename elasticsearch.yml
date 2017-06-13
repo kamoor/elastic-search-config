@@ -102,4 +102,4 @@ network.host: 0.0.0.0
 #
 #action.destructive_requires_name: true
 
-discovery.zen.ping.unicast.hosts: ['172.31.4.21']
+discovery.zen.ping.unicast.hosts: ['MASTER_NODE']
