@@ -23,4 +23,6 @@ sed -i -e s/MASTER_NODE/$FIRST_NODE/g elasticsearch.yml
 sudo cp ./elasticsearch.yml /etc/elasticsearch/elasticsearch.yml
 sudo cp ./jvm.options /etc/elasticsearch/jvm.options
 
+#/usr/share/elasticsearch/bin/elasticsearch-plugin install x-pack
+
 sudo service elasticsearch start
